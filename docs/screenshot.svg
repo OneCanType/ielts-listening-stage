@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="雅思听力演示台界面示意">
+  <defs>
+    <style>
+      text { font-family: "PingFang SC", -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+      .ink { fill:#ede6dd } .ink2 { fill:#b8aea3 } .ink3 { fill:#8a8076 }
+      .small { font-size:10px; letter-spacing:1.6px } .body { font-size:12px }
+      .ttl { font-size:19px; font-weight:700 } .h { font-size:15px; font-weight:700 }
+      .btn { font-size:10px; fill:#b8aea3 }
+      .pill { font-size:9px; font-weight:700 }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" fill="#211e1d"/>
+  <!-- top bar -->
+  <rect width="1200" height="54" fill="#2a2624"/>
+  <line x1="0" y1="54" x2="1200" y2="54" stroke="#463f39"/>
+  <rect x="16" y="13" width="58" height="28" rx="5" fill="#d8b26a"/>
+  <text x="45" y="32" text-anchor="middle" font-size="13" font-weight="800" fill="#221d18">IELTS</text>
+  <text x="84" y="32" font-size="13" font-weight="700" fill="#ede6dd">听力演示台</text>
+  <text x="600" y="32" text-anchor="middle" font-size="12" fill="#b8aea3">D1 · 1001 · Booking a study room</text>
+  <g class="btn">
+    <rect x="880" y="13" width="62" height="28" rx="6" fill="#2a2624" stroke="#463f39"/>
+    <text x="911" y="31" text-anchor="middle">隐藏文稿</text>
+    <rect x="948" y="13" width="62" height="28" rx="6" fill="#2a2624" stroke="#463f39"/>
+    <text x="979" y="31" text-anchor="middle">投影</text>
+    <rect x="1016" y="13" width="72" height="28" rx="6" fill="#2a2624" stroke="#463f39"/>
+    <text x="1052" y="31" text-anchor="middle">导出PDF</text>
+    <rect x="1094" y="13" width="46" height="28" rx="6" fill="#2a2624" stroke="#463f39"/>
+    <text x="1117" y="31" text-anchor="middle">A−</text>
+    <rect x="1146" y="13" width="38" height="28" rx="6" fill="#2a2624" stroke="#463f39"/>
+    <text x="1165" y="31" text-anchor="middle">A+</text>
+  </g>
+
+  <!-- left pane -->
+  <rect x="0" y="54" width="660" height="646" fill="#2a2624"/>
+  <text x="24" y="86" class="ink3 small">LISTENING TRANSCRIPT</text>
+  <text x="24" y="112" class="ink ttl">Booking a study room</text>
+  <text x="24" y="132" class="ink3" font-size="10">示例数据 · 自编文本（非真题）</text>
+
+  <!-- legend -->
+  <g>
+    <rect x="24" y="146" width="58" height="20" rx="4" fill="#2f3a2c"/>
+    <text x="53" y="160" text-anchor="middle" class="pill" fill="#7fd3a8">答案词</text>
+    <rect x="88" y="146" width="50" height="20" rx="4" fill="#3a2b28"/>
+    <text x="113" y="160" text-anchor="middle" class="pill" fill="#f08a7c">干扰</text>
+    <rect x="144" y="146" width="66" height="20" rx="4" fill="#26303d"/>
+    <text x="177" y="160" text-anchor="middle" class="pill" fill="#8ab8ff">逻辑信号</text>
+    <rect x="216" y="146" width="50" height="20" rx="4" fill="#3a3324"/>
+    <text x="241" y="160" text-anchor="middle" class="pill" fill="#e8c26c">定位</text>
+    <rect x="272" y="146" width="58" height="20" rx="4" fill="#233436"/>
+    <text x="301" y="160" text-anchor="middle" class="pill" fill="#22d3ee">自定义</text>
+    <rect x="336" y="146" width="54" height="20" rx="4" fill="#3a2533"/>
+    <text x="363" y="160" text-anchor="middle" class="pill" fill="#f472b6">替换</text>
+    <text x="404" y="160" class="ink3" font-size="10">全部显示</text>
+  </g>
+
+  <!-- transcript paragraphs -->
+  <g class="body">
+    <text x="96" y="196" text-anchor="end" class="ink3 small" font-size="9">LIBRARIAN</text>
+    <text x="108" y="196" class="ink">Good morning. Student services. How can I help?</text>
+
+    <text x="96" y="228" text-anchor="end" class="ink3 small" font-size="9">MIA</text>
+    <text x="108" y="228" class="ink">Hi. I'd like to book a study</text>
+    <rect x="292" y="216" width="62" height="16" rx="3" fill="#3a3430" stroke="#5b534b" stroke-dasharray="2 2"/>
+    <text x="323" y="228" text-anchor="middle" class="ink3">……</text>
+    <text x="360" y="228" class="ink">for tomorrow, please.</text>
+
+    <text x="96" y="260" text-anchor="end" class="ink3 small" font-size="9">LIBRARIAN</text>
+    <text x="108" y="260" class="ink">Of course. Can I take your name?</text>
+
+    <text x="96" y="292" text-anchor="end" class="ink3 small" font-size="9">MIA</text>
+    <text x="108" y="292" class="ink">It's Mia</text>
+    <rect x="180" y="281" width="36" height="14" rx="3" fill="#2e4a3a"/>
+    <text x="198" y="292" text-anchor="middle" font-size="10" fill="#7fd3a8">Chen</text>
+    <text x="219" y="292" class="ink">. That's C-H-E-N.</text>
+
+    <text x="96" y="324" text-anchor="end" class="ink3 small" font-size="9">LIBRARIAN</text>
+    <text x="108" y="324" class="ink">Right. Room</text>
+    <rect x="205" y="313" width="32" height="14" rx="3" fill="#2e4a3a"/>
+    <text x="221" y="324" text-anchor="middle" font-size="10" fill="#7fd3a8">B12</text>
+    <text x="243" y="324" class="ink">has a</text>
+    <rect x="288" y="313" width="74" height="14" rx="3" fill="#2e4a3a"/>
+    <text x="325" y="324" text-anchor="middle" font-size="10" fill="#7fd3a8">whiteboard</text>
+    <text x="364" y="324" class="ink">, and room C7</text>
+    <text x="108" y="350" class="ink">has a</text>
+    <rect x="152" y="339" width="62" height="14" rx="3" fill="#3a2b28"/>
+    <text x="183" y="350" text-anchor="middle" font-size="10" fill="#f08a7c">projector</text>
+    <text x="216" y="350" class="ink">.</text>
+
+    <text x="96" y="382" text-anchor="end" class="ink3 small" font-size="9">MIA</text>
+    <text x="108" y="382" class="ink">I'll take</text>
+    <rect x="166" y="371" width="36" height="14" rx="3" fill="#3a3430" stroke="#5b534b" stroke-dasharray="2 2"/>
+    <text x="184" y="382" text-anchor="middle" class="ink3">……</text>
+    <text x="212" y="382" class="ink">, please. How long can I keep it?</text>
+
+    <text x="96" y="414" text-anchor="end" class="ink3 small" font-size="9">LIBRARIAN</text>
+    <text x="108" y="414" class="ink">Up to</text>
+    <rect x="153" y="403" width="52" height="14" rx="3" fill="#26303d"/>
+    <text x="179" y="414" text-anchor="middle" font-size="10" fill="#8ab8ff">three</text>
+    <text x="211" y="414" class="ink">hours.</text>
+    <rect x="255" y="403" width="54" height="14" rx="3" fill="#26303d"/>
+    <text x="282" y="414" text-anchor="middle" font-size="10" fill="#8ab8ff">After that</text>
+    <text x="315" y="414" class="ink">you need to book again.</text>
+  </g>
+
+  <!-- divider -->
+  <rect x="660" y="54" width="10" height="646" fill="#211e1d"/>
+  <rect x="664" y="330" width="3" height="46" rx="2" fill="#463f39"/>
+
+  <!-- right pane -->
+  <rect x="670" y="54" width="530" height="646" fill="#2a2624"/>
+  <rect x="694" y="82" width="4" height="20" fill="#ede6dd"/>
+  <text x="708" y="98" class="ink h">Questions 1-5</text>
+  <text x="694" y="122" class="ink2" font-size="10.5">Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.</text>
+
+  <text x="694" y="152" class="ink" font-size="14" font-weight="700">Study room booking</text>
+  <g font-size="12">
+    <text x="694" y="182" class="ink">Name:</text>
+    <rect x="736" y="170" width="62" height="18" rx="3" fill="#211e1d" stroke="#d8b26a"/>
+    <text x="767" y="183" text-anchor="middle" fill="#ede6dd">Chen</text>
+
+    <text x="694" y="212" class="ink">Student number:</text>
+    <rect x="798" y="200" width="52" height="18" rx="3" fill="#211e1d" stroke="#5b534b"/>
+    <text x="824" y="213" text-anchor="middle" class="ink3">2</text>
+
+    <text x="694" y="242" class="ink">Room:</text>
+    <rect x="738" y="230" width="46" height="18" rx="3" fill="#211e1d" stroke="#5b534b"/>
+    <text x="761" y="243" text-anchor="middle" class="ink3">3</text>
+
+    <text x="694" y="272" class="ink">Maximum booking:</text>
+    <rect x="818" y="260" width="46" height="18" rx="3" fill="#211e1d" stroke="#5b534b"/>
+    <text x="841" y="273" text-anchor="middle" class="ink3">4</text>
+    <text x="872" y="272" class="ink">hours</text>
+
+    <text x="694" y="302" class="ink">Not allowed in the room:</text>
+    <rect x="844" y="290" width="46" height="18" rx="3" fill="#211e1d" stroke="#5b534b"/>
+    <text x="867" y="303" text-anchor="middle" class="ink3">5</text>
+  </g>
+
+  <text x="694" y="336" class="ink" font-size="13" font-weight="700">Library services</text>
+  <rect x="694" y="346" width="490" height="104" rx="2" fill="#332e2b" stroke="#463f39"/>
+  <line x1="694" y1="374" x2="1184" y2="374" stroke="#463f39"/>
+  <line x1="694" y1="400" x2="1184" y2="400" stroke="#463f39"/>
+  <line x1="694" y1="426" x2="1184" y2="426" stroke="#463f39"/>
+  <line x1="900" y1="346" x2="900" y2="450" stroke="#463f39"/>
+  <g font-size="11">
+    <text x="797" y="365" text-anchor="middle" class="ink2">Service</text>
+    <text x="1042" y="365" text-anchor="middle" class="ink2">Where</text>
+    <text x="706" y="392" class="ink">printing</text>
+    <text x="912" y="392" class="ink">ground floor</text>
+    <text x="706" y="418" class="ink">IT help</text>
+    <text x="912" y="418" class="ink">room C7</text>
+    <text x="706" y="444" class="ink">book returns</text>
+    <text x="912" y="444" class="ink">main desk</text>
+  </g>
+
+  <rect x="694" y="472" width="4" height="20" fill="#ede6dd"/>
+  <text x="708" y="488" class="ink h">Questions 6-8</text>
+  <text x="694" y="512" class="ink2" font-size="10.5">Choose the correct letter, A, B or C.</text>
+  <g font-size="12">
+    <text x="694" y="542" class="ink">6  What does Room B12 have?</text>
+    <circle cx="700" cy="562" r="5" fill="none" stroke="#8a8076"/>
+    <text x="714" y="566" class="ink">A  a whiteboard</text>
+    <circle cx="700" cy="584" r="5" fill="none" stroke="#8a8076"/>
+    <text x="714" y="588" class="ink">B  a projector</text>
+    <circle cx="700" cy="606" r="5" fill="none" stroke="#8a8076"/>
+    <text x="714" y="610" class="ink">C  a printer</text>
+  </g>
+
+  <!-- link curve -->
+  <path d="M 360 324 C 480 324, 560 522, 710 522" fill="none" stroke="#f472b6" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.85"/>
+  <rect x="544" y="454" width="58" height="24" rx="9" fill="#2a2624" stroke="#f472b6"/>
+  <text x="573" y="470" text-anchor="middle" font-size="10" font-weight="700" fill="#f472b6">同义替换</text>
+
+  <!-- bottom strip -->
+  <rect x="0" y="654" width="1200" height="46" fill="#2a2624"/>
+  <line x1="0" y1="654" x2="1200" y2="654" stroke="#463f39"/>
+  <g font-size="11">
+    <text x="18" y="681" class="ink3">← 上一题</text>
+    <g>
+      <rect x="86" y="664" width="26" height="24" rx="4" fill="#d8b26a"/>
+      <text x="99" y="681" text-anchor="middle" fill="#221d18" font-weight="700">1</text>
+      <rect x="118" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="131" y="681" text-anchor="middle" class="ink2">2</text>
+      <rect x="150" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="163" y="681" text-anchor="middle" class="ink2">3</text>
+      <rect x="182" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="195" y="681" text-anchor="middle" class="ink2">4</text>
+      <rect x="214" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="227" y="681" text-anchor="middle" class="ink2">5</text>
+      <rect x="246" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="259" y="681" text-anchor="middle" class="ink2">6</text>
+      <rect x="278" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="291" y="681" text-anchor="middle" class="ink2">7</text>
+      <rect x="310" y="664" width="26" height="24" rx="4" fill="#332e2b" stroke="#463f39"/>
+      <text x="323" y="681" text-anchor="middle" class="ink2">8</text>
+    </g>
+    <text x="1182" y="681" text-anchor="end" class="ink3">下一题 →</text>
+  </g>
+</svg>
