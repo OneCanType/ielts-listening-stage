@@ -6,9 +6,8 @@
 
 A single-file, offline classroom display for IELTS Listening teachers: transcript on the left, questions on the right, with answer blanking, synonym link lines, rich-text notes, a presenter view, and web-like PDF export. The whole app is one `.html` file — double-click to open, no install, no network.
 
-> 一个给雅思听力老师用的离线单文件演示台：左边听力原文、右边题目，标注挖空、同义替换连线、富文本笔记、投影演讲者视图、导出和网页同版式的 PDF。
 
-Built from a teacher's requirements, written by **DeepSeek**. Issues, forks and pull requests are welcome.
+Built from an IELTS teacher's requirements, written by **DeepSeek**. Issues, forks and pull requests are welcome.
 
 ![UI mock](docs/screenshot.svg)
 
@@ -109,6 +108,23 @@ ielts-listening-stage/
 5. To show the transcript to students, open “Presenter”, move the window to the second screen, and toggle “Show transcript” there.
 6. After class: “Export PDF” → Web layout → “Save as PDF” in the print dialog.
 
+## Using your own lessons (no coding required)
+
+The point of this repo is to let you teach **your own** material, not just the demo.
+
+**Recommended: hand the page to an AI assistant.**
+
+1. Download `ielts-listening-stage.html` (or give the assistant the whole repo).
+2. Say something like: *“This is my listening lesson player. Replace lesson 1 with my own passage — here is the transcript and the questions.”*
+3. The assistant reads the data structure, follows [docs/data-format.en.md](docs/data-format.en.md) (or [docs/篇目数据规范.md](docs/篇目数据规范.md)), generates the JSON, injects it with `tools/apply-data.py`, and self-checks with `tools/check-data.py`.
+4. Open the rebuilt file and add your own annotations as usual.
+
+You don't need to know JavaScript, and you don't need to read the 6,000-line source — **the assistant can read the page; you only need to say which lesson and what the text and answers are.**
+
+> Tip: ask for “`python3 tools/check-data.py` must report 0 errors before you hand it back” and you'll save most of the rework.
+
+If you do write code, you can also author the JSON by hand from [docs/data-format.en.md](docs/data-format.en.md), or edit the demo text in `tools/demo_data.py`.
+
 ## Data & privacy
 
 - Answers, annotations, notes and figures live in the browser's `localStorage`; nothing is uploaded.
@@ -123,7 +139,7 @@ This repo uses the “public code, private data” approach:
 | File | Data | Purpose |
 | --- | --- | --- |
 | `ielts-listening-stage.html` (repo root) | **self-written demo**: 1 unit / 3 lessons / 20 questions | public repo, GitHub Pages, demos |
-| `private/ielts-listening-stage.full.html` | real question bank (30 lessons / 264 questions) | for teaching, **never committed** |
+| `private/ielts-listening-stage.full.html` | real question bank (12 units / 61 lessons / 428 questions) | for teaching, **never committed** |
 | `private/ielts-full-data.json` | real question bank as JSON | backup / regenerate the full build |
 
 `private/` is git-ignored; copy that folder when changing machines.
@@ -172,13 +188,14 @@ See [NOTICE.md](NOTICE.md).
 
 ## About the author & AI disclosure
 
-I'm not a developer — I'm an IELTS listening teacher. Every line of code here was written by **DeepSeek** from the requirements I described, one by one. My job was to explain what I needed, test it in class, and point out what broke. I can barely read the code itself.
+I'm not a developer — I'm an IELTS teacher. Every line of code here was written by **DeepSeek** from the requirements I described, one by one. My job was to explain what I needed, test it in class, and point out what broke. I can barely read the code itself.
 
 So please keep that in mind:
 
 - If the structure, naming or browser compatibility looks unprofessional, feel free to say so.
 - Found a bug or have an idea? Open an issue — I'll describe the symptoms as clearly as I can.
 - No reply? Just **fork it and change whatever you need**; no permission needed.
+- To teach your own material, follow “Using your own lessons” above and let an AI assistant do the conversion.
 - If it happens to help you, a star is more than enough.
 
 Thanks in advance to everyone who helps maintain it.
