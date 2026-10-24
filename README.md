@@ -1,8 +1,14 @@
 # 雅思听力演示台（IELTS Listening Stage）
 
+**简体中文** ｜ [English](README.en.md)
+
+**在线演示**：https://onecantype.github.io/ielts-listening-stage/
+
 一个给雅思听力老师用的**离线单文件演示台**：左边听力原文、右边题目，支持标注挖空、同义替换连线、富文本笔记、投影演讲者视图，并能导出和网页同版式的 PDF。整个应用只有一个 `.html` 文件，双击即用，不联网、不装依赖。
 
 > A single-file, offline classroom display for IELTS Listening teachers: transcript + questions side by side, answer blanking, synonym link lines with notes, rich-text notes, presenter view, and web-like PDF export.
+
+由一位雅思老师提出需求、DeepSeek 编写代码；欢迎 Issue、Fork 和 PR。
 
 ![界面示意](docs/screenshot.svg)
 
@@ -74,6 +80,7 @@ ielts-listening-stage/
 ├── ielts-listening-stage.html   # 应用本体 + 自编示例数据（1 单元 / 3 节 / 20 题）
 ├── index.html                 # GitHub Pages 入口，自动跳到上面的文件
 ├── README.md
+├── README.en.md               # English README
 ├── LICENSE
 ├── NOTICE.md                  # 内容版权说明
 ├── .gitignore                 # 忽略 private/、_src/、导出文件
@@ -114,7 +121,7 @@ ielts-listening-stage/
 | 文件 | 数据 | 用途 |
 | --- | --- | --- |
 | `ielts-listening-stage.html`（仓库根） | **自编示例**：1 单元 / 3 节 / 20 题 | 公开仓库、GitHub Pages、给人演示 |
-| `private/ielts-listening-stage.full.html` | 真实题库（30 节 / 264 题） | 自己上课用，**不进 Git** |
+| `private/ielts-listening-stage.full.html` | 真实题库（12 单元 / 61 节 / 468 题） | 自己上课用，**不进 Git** |
 | `private/ielts-full-data.json` | 真实题库纯数据 | 备份 / 重新生成完整版 |
 
 `private/` 已被 `.gitignore` 忽略。换机器时单独拷贝这个目录即可。
@@ -125,8 +132,7 @@ python3 tools/apply-data.py --demo --ls ielts-listening-sim-demo --ver demo-2026
 
 # 重新生成完整版（不要输出到根目录，避免误提交）
 python3 tools/apply-data.py private/ielts-full-data.json \
-  --out private/ielts-listening-stage.full.html \
-  --ls ielts-listening-sim-v1 --ver 2026-10-24b
+  --out private/ielts-listening-stage.full.html
 ```
 
 ## 更新仓库
@@ -143,6 +149,7 @@ git push
 
 ## 开发与扩展
 
+- 深度文档目前是中文；英文读者可以先看 [README.en.md](README.en.md)。
 - 想改功能 / 加题型 / 加标注类别：看 [docs/开发规范.md](docs/开发规范.md)
 - 想加一节听力、换题库：看 [docs/篇目数据规范.md](docs/篇目数据规范.md)，改完跑一遍：
 
@@ -160,6 +167,19 @@ python3 tools/check-data.py ielts-listening-stage.html
 真实题库保存在本地 `private/`，请勿提交、勿公开发布；如果误提交了，需要重写 Git 历史（`git filter-repo`）才能彻底移除。
 
 详见 [NOTICE.md](NOTICE.md)。
+
+## 关于作者与 AI 声明
+
+我不是程序员，只是一名雅思听力老师。这个工具的全部代码，是我把课堂上的需求一条条讲清楚，由 **DeepSeek** 写出来的；我负责提需求、上课试用、挑毛病，代码本身基本看不懂。
+
+所以：
+
+- 结构、命名、兼容性上如果有不专业的地方，欢迎直接指出；
+- 遇到 bug 或有新想法，欢迎提 Issue，我会尽量把现象描述清楚；
+- 等不到回复也没关系，**直接 Fork 拿走改**，不用问我；
+- 如果它刚好帮到你，点个 Star 就是最大的鼓励。
+
+后续维护要靠各位大佬多多帮忙，先谢谢了。
 
 ## 许可证
 
