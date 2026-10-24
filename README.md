@@ -58,7 +58,7 @@
 ## 快速开始
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/OneCanType/ielts-listening-stage.git
 cd ielts-listening-stage
 open ielts-listening-stage.html      # macOS；Windows 直接双击文件
 ```
@@ -76,6 +76,7 @@ ielts-listening-stage/
 ├── README.md
 ├── LICENSE
 ├── NOTICE.md                  # 内容版权说明
+├── .gitignore                 # 忽略 private/、_src/、导出文件
 ├── docs/
 │   ├── 开发规范.md            # 架构、状态、渲染、交互、扩展、测试、已知坑
 │   ├── 篇目数据规范.md        # JSON 结构、题型、标注坐标、新增/删除篇目步骤
@@ -86,8 +87,8 @@ ielts-listening-stage/
 │   ├── demo_data.py           # 示例题库源文件（文本 + 标注，坐标自动算）
 │   ├── make-demo-map.py       # 生成示例地图（本地 webp，不提交）
 │   └── demo-map.b64           # 地图的 base64 文本（仓库用它）
-├── private/                   # 真实题库（.gitignore 已忽略，不提交）
-└── _src/                      # 本地备份（已忽略）
+├── private/                   # 真实题库（本地目录，不在仓库里）
+└── _src/                      # 本地备份（本地目录，不在仓库里）
 ```
 
 ## 老师怎么用
@@ -128,19 +129,17 @@ python3 tools/apply-data.py private/ielts-full-data.json \
   --ls ielts-listening-sim-v1 --ver 2026-10-24b
 ```
 
-## 发布到 GitHub
+## 更新仓库
+
+仓库已经托管在 GitHub，改完文件直接提交：
 
 ```bash
-git init
 git add .
-git status --short          # 确认列表里没有 private/ 和 _src/
-git commit -m "feat: single-file IELTS listening lesson player"
-git branch -M main
-git remote add origin git@github.com:<your-name>/<repo>.git
-git push -u origin main
+git commit -m "更新示例题库 / 文档"
+git push
 ```
 
-**在线演示（GitHub Pages）**：Settings → Pages → Source 选 `Deploy from a branch`，分支 `main`、目录 `/ (root)`。访问 `https://<your-name>.github.io/<repo>/` 会自动跳到示例版。
+**在线演示（GitHub Pages）**：Settings → Pages → Source 选 `Deploy from a branch`，分支 `main`、目录 `/ (root)`。开启后访问 `https://onecantype.github.io/ielts-listening-stage/`，会自动跳到示例版。
 
 ## 开发与扩展
 
