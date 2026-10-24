@@ -87,6 +87,8 @@ ielts-listening-stage/
 ├── docs/
 │   ├── 开发规范.md            # 架构、状态、渲染、交互、扩展、测试、已知坑
 │   ├── 篇目数据规范.md        # JSON 结构、题型、标注坐标、新增/删除篇目步骤
+│   ├── development-guide.en.md # English: architecture, state, rendering, testing
+│   ├── data-format.en.md      # English: JSON schema, question types, offsets
 │   └── screenshot.svg         # 界面示意图（矢量）
 ├── tools/
 │   ├── check-data.py          # 题库静态校验（题号/答案/标注边界…）
@@ -149,7 +151,7 @@ git push
 
 ## 开发与扩展
 
-- 深度文档目前是中文；英文读者可以先看 [README.en.md](README.en.md)。
+- 深度文档中英双语：[开发规范](docs/开发规范.md) / [Development Guide](docs/development-guide.en.md)；[篇目数据规范](docs/篇目数据规范.md) / [Data Format](docs/data-format.en.md)。
 - 想改功能 / 加题型 / 加标注类别：看 [docs/开发规范.md](docs/开发规范.md)
 - 想加一节听力、换题库：看 [docs/篇目数据规范.md](docs/篇目数据规范.md)，改完跑一遍：
 

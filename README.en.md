@@ -85,9 +85,11 @@ ielts-listening-stage/
 ├── NOTICE.md                  # copyright and content notice
 ├── .gitignore                 # ignores private/, _src/, exported PDFs
 ├── docs/
-│   ├── 开发规范.md            # architecture, state, rendering, interactions, extension, testing, pitfalls (Chinese)
-│   ├── 篇目数据规范.md        # JSON schema, question types, annotation offsets, adding/removing lessons (Chinese)
-│   └── screenshot.svg         # UI mock
+│   ├── development-guide.en.md # architecture, state, rendering, interactions, testing, pitfalls
+│   ├── data-format.en.md       # JSON schema, question types, annotation offsets, adding lessons
+│   ├── 开发规范.md             # Chinese version of the development guide
+│   ├── 篇目数据规范.md         # Chinese version of the data format
+│   └── screenshot.svg          # UI mock
 ├── tools/
 │   ├── check-data.py          # question-bank validator
 │   ├── apply-data.py          # inject any question-bank JSON into the HTML (incl. --demo)
@@ -150,9 +152,8 @@ git push
 
 ## Development & extension
 
-- The in-depth docs are currently in Chinese. English readers can start from this file.
-- To change behaviour, add a question type or an annotation type, read [docs/开发规范.md](docs/开发规范.md) (Chinese).
-- To add a lesson or swap the question bank, read [docs/篇目数据规范.md](docs/篇目数据规范.md) (Chinese), then run:
+- To change behaviour, add a question type or an annotation type, read [docs/development-guide.en.md](docs/development-guide.en.md) (Chinese: [开发规范.md](docs/开发规范.md)).
+- To add a lesson or swap the question bank, read [docs/data-format.en.md](docs/data-format.en.md) (Chinese: [篇目数据规范.md](docs/篇目数据规范.md)), then run:
 
 ```bash
 python3 tools/check-data.py ielts-listening-stage.html
