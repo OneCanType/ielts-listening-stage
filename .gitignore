@@ -1,0 +1,16 @@
+# 本地备份 / 生成物，不要提交
+_src/
+dist/
+private/
+
+# 导出文件
+*.pdf
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+__pycache__/
+*.pyc
